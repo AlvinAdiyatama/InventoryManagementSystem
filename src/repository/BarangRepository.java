@@ -23,13 +23,13 @@ public class BarangRepository {
 
             PreparedStatement ps = conn.prepareStatement(sql);
 
-            ps.setString(1, barang.getNama());
-            ps.setInt(2, barang.getStok());
-            ps.setDouble(3, barang.getHarga());
+ps.setString(1, barang.getNama());
+ps.setInt(2, barang.getStok());
+ps.setDouble(3, barang.getHarga());
 
-            ps.executeUpdate();
+ps.executeUpdate();
 
-            System.out.println("Barang berhasil ditambahkan!");
+System.out.println("Barang berhasil ditambahkan!");
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -55,10 +55,9 @@ public class BarangRepository {
             Barang barang = new Barang();
 
             barang.setId(rs.getInt("id"));
-            barang.setNama(rs.getString("nama_barang"));
-            barang.setStok(rs.getInt("stok"));
-            barang.setHarga(rs.getDouble("harga"));
-
+barang.setNama(rs.getString("nama_barang"));
+barang.setStok(rs.getInt("stok"));
+barang.setHarga(rs.getDouble("harga"));
             daftarBarang.add(barang);
 
         }
