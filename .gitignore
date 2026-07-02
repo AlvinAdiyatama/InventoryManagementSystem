@@ -1,0 +1,14 @@
+# Java
+*.class
+
+# VS Code
+.vscode/
+
+# Build
+bin/
+out/
+target/
+
+# OS
+.DS_Store
+Thumbs.db
